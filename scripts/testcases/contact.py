@@ -75,7 +75,9 @@ class ContactTest(unittest.TestCase):
 
     
     def launchcontact(self):
+    	#launch contact 
 	d(text='People').click.wait()
+	#if google account pop up
 	if d.exists(text='Make it Google'):
 	    d(text='Not now').click.wait()
 	
@@ -84,6 +86,7 @@ class ContactTest(unittest.TestCase):
 	return string.atoi(number)
 
     def inputcontactinfo(self):
+    	#set contact name,phone
 	d(text='Name').set_text('China Mobile')
 	d(text='Phone',className='android.widget.EditText').set_text('10086')
 	d(text='Done').click.wait()

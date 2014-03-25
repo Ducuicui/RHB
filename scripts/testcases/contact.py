@@ -63,7 +63,9 @@ class ContactTest(unittest.TestCase):
 	    d(resourceId='android:id/up').click.wait()
 	    time.sleep(3)
 	    beforeNO = self.getcontactnumber()
+	#single tap the first contact 
 	d.click(338,478)
+	#delete contact
 	d(description='More options',index='1').click.wait()
 	d(text='Delete').click.wait()
 	d(text='OK').click.wait()

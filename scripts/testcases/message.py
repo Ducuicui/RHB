@@ -4,9 +4,6 @@ import time
 from uiautomator import device as d
 import string
 
-
-
-
 class MessageTest(unittest.TestCase):
 	
     def setUp(self):

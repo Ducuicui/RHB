@@ -19,8 +19,7 @@ class MessageTest(unittest.TestCase):
 	Steps:1. Open Messages app
 	      2. Clear all message
 	      3. send a SMS
-	      4. Delete all message
-	      5. exit
+	      4. exit
 	"""
 	#step 2
 	self.clearall()
